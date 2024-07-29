@@ -1,0 +1,164 @@
+/* .product-card img{
+    width: 200px;
+    height: 200px;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px grey;
+} */
+.product {
+  
+  /* Other styles for the card */
+  display: flex; /* Enable flexbox for card layout */
+  flex-direction: column; /* Stack content vertically */
+  width: 300px; /* Set a desired width for all cards */
+  /* Adjust margins as needed */
+}
+
+.product-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+    
+    background-color: #fff; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 250px; 
+    margin: 10px; 
+    padding: 15px; 
+  }
+  
+  .product-card img {
+    
+    width: 100%; 
+    height: auto;
+    border-radius: 15px;
+    /* object-fit: cover;  */
+  }
+  
+  .product-card h2 {
+   
+    font-size: 18px; 
+    margin-bottom: 5px; 
+  }
+  .product-card:hover {
+    background-color: #f5f5f5;
+    transform: translateY(3px);
+    
+  }
+  
+  
+  .product-card h3 {
+    
+    font-size: 14px; 
+    color: #aaa; 
+    margin-bottom: 5px; 
+  }
+  
+  .product-card p {
+    font-size: 14px; 
+    margin-bottom: 5px; 
+  }
+  
+  .product-card p strong {
+    font-weight: bold;
+  }
+  
+  .product-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-button button {
+   
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.2s ease-in-out; 
+  }
+  
+  .product-button button:hover {
+    background-color: #3e8e41; 
+  }
+  
+  .product-button button:active{
+    transform: translateY(2px);
+  }
+
+  .filter-buttons {
+    /* Style the container for the buttons (optional) */
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-around; /* Distribute buttons evenly */
+    margin-bottom: 15px; /* Add some bottom margin */
+  }
+  
+  .filter-buttons button {
+    /* Style all buttons */
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 5px; 
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #eee; 
+  }
+  
+  .filter-buttons button.active {
+    background-color: #ddd;
+    border-color: #ccc; 
+    font-weight: bold;
+  }
+
+  /* app styling */
+/* #category{
+  background-color: grey;
+  border-radius: 20px;
+} */
+
+.search-container {
+  /* Styles for the overall container (optional) */
+  display: flex; /* Allow arranging elements horizontally */
+  align-items: center; /* Vertically center content */
+  width: 100%; /* Make the search bar full width */
+  margin-bottom: 15px; /* Add some margin below */
+  margin-top: 15px;
+}
+
+.search-input {
+  /* Styles for the search input field and icon container */
+  position: relative; /* Enable positioning of the icon */
+  display: flex; /* Allow arranging icon and input side-by-side */
+  width: 100%; /* Make the input field fill the available space */
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px 10px 40px; /* Add padding with extra space for the icon */
+}
+
+.search-input svg {
+  /* Styles for the MagnifyingGlass icon */
+  position: absolute; /* Position the icon inside the input */
+  top: 50%; /* Center the icon vertically */
+  left: 15px; /* Position the icon with some left padding */
+  transform: translateY(-50%); /* Adjust vertical centering if needed */
+  color: #999; /* Gray color for the icon */
+  fill: currentColor; /* Ensure icon color matches text color */
+}
+
+.search-input input {
+  /* Styles for the input field itself */
+  width: 100%; /* Make the input fill the remaining space */
+  border: none; /* Remove default border (inherited from parent) */
+  outline: none; /* Remove default outline on focus */
+  font-size: 16px; /* Set font size for the input text */
+}
